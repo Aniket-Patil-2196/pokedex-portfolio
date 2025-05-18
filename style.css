@@ -22,7 +22,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     border: 2px solid black;
-    width: 800px;
+    width: 825px;
     height: 500px;
 }
 
@@ -245,4 +245,143 @@ body{
 #speaker{
     height: 100%;
     width: 100%;
+}
+
+/* Right Complete */
+
+/* Hige */
+
+.hinge {
+  width: 25px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #8B0000,
+    #B71C1C,
+    #D32F2F,
+    #B71C1C,
+    #8B0000
+  );
+  box-shadow: inset 0 0 5px #212121;
+  border-radius: 5px;
+  border-left: 3px solid #212121;
+  border-right: 3px solid #212121;
+
+
+}
+
+
+/* Left Side */
+
+.right-container{
+    perspective: 1000px;
+}
+
+.right{
+    position: absolute;
+    top: -190px;
+    left: -425px;
+    height: 440px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: transform 2s ease;
+    transform-origin: right center;
+    transform-style: preserve-3d;
+}
+
+.right:hover{
+    transform: rotateY(180deg) translateX(-25px);;
+}
+
+.right-panels{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-front{
+    z-index: 1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 10px inset #B71C1C;
+    /* border-left: 10px inset #B71C1C;
+    border-right: 10px inset #B71C1C; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #D32F2F;
+}
+
+.right-back{
+    background-color: #D32F2F;
+    border: 10px inset #B71C1C;
+    transform: rotateY(180deg);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-direction: column;
+}
+
+.open-btn{
+    height: 50px;
+    width: 50px;
+    margin-top: 50%;
+}
+
+#open-btn{
+    height: 50px;
+    width: 50px;
+}
+
+.notch{
+    height: 10px;
+    width: 100px;
+    border: 5px inset #B71C1C;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 20px; /* adjust as needed */
+}
+
+.display-border-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    background-color: #FFFFFF;
+    margin-top: 25px;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.display-right{
+    height: 90%;
+    width: 90%;
+    background-color: #92B07C;
+    border: 5px inset gray;
+}
+
+.buttons{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btn-right{
+    width: 125px;
+    height: 100%;
+    background-color: #42A5F5;
+    border: 3px inset #1877c5;
+    border-radius: 5px;
 }
