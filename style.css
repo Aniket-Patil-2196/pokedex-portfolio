@@ -15,6 +15,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .main{
@@ -55,6 +56,9 @@ body{
     background-color: #FFFFFF;
     margin-left: 10px;
     border: 5px inset gray;
+}
+
+.start-blink{
     animation: light-blink 1.5s ease-in-out 0s infinite alternate;
 }
 
@@ -161,7 +165,29 @@ body{
     width: 90%;
     background-color: #92B07C;
     border: 5px inset gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    padding: 15px;
+    font-size: 12px;
+    text-align: left;
 }
+
+.border{
+    border: 1px solid black;
+    list-style: none;
+    margin: 2px;
+    padding: 5px;
+}
+
+#left-text {
+  white-space: pre-line;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  color: #000;
+}
+
 
 .controls{
     width: 300px;
@@ -196,13 +222,15 @@ body{
     background-color: 	#4CAF50;
     border: 3px inset #2b672d;
     border-radius: 5px;
+    cursor: pointer;
 }
 .btn{
     height: 40px;
     width: 40px;
     background-color: 	#4CAF50;
     border: 3px inset #2b672d;
-    border-radius: 5px;   
+    border-radius: 5px;  
+    cursor: pointer; 
 }
 
 .controls-right{
@@ -230,6 +258,7 @@ body{
     border: 3px inset #691977;
     border-radius: 50%;
     margin-top: 45px;
+    cursor: pointer;
 }
 
 .speaker{
@@ -292,7 +321,7 @@ body{
     transform-style: preserve-3d;
 }
 
-.right:hover{
+.right-open{
     transform: rotateY(180deg) translateX(-25px);;
 }
 
@@ -334,6 +363,7 @@ body{
     height: 50px;
     width: 50px;
     margin-top: 50%;
+    cursor: pointer;
 }
 
 #open-btn{
