@@ -1,0 +1,11 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <!-- Commit Dots -->
+  <rect x="6" y="6" width="3" height="3" fill="#F1502F"/> <!-- top left -->
+  <rect x="11" y="11" width="3" height="3" fill="#F1502F"/> <!-- center -->
+  <rect x="16" y="16" width="3" height="3" fill="#F1502F"/> <!-- bottom right -->
+
+  <!-- Connecting Lines -->
+  <rect x="8" y="7" width="5" height="1" fill="#333"/> <!-- horizontal top -->
+  <rect x="12" y="8" width="1" height="4" fill="#333"/> <!-- vertical down -->
+  <rect x="13" y="13" width="3" height="1" fill="#333"/> <!-- horizontal bottom -->
+</svg>

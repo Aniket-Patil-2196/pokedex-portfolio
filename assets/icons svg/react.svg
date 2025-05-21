@@ -1,0 +1,12 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <!-- Atom ellipse parts -->
+  <rect x="8" y="5" width="1" height="10" fill="#61DAFB"/>
+  <rect x="15" y="5" width="1" height="10" fill="#61DAFB" transform="rotate(60 15 5)"/>
+  <rect x="15" y="5" width="1" height="10" fill="#61DAFB" transform="rotate(-60 15 5)"/>
+  <!-- Center dot -->
+  <rect x="11" y="10" width="2" height="2" fill="#61DAFB"/>
+  <!-- Lock overlay -->
+  <rect x="16" y="14" width="4" height="5" fill="#666"/>
+  <rect x="17" y="12" width="2" height="3" fill="#666"/>
+  <rect x="18" y="10" width="1" height="2" fill="#666"/>
+</svg>

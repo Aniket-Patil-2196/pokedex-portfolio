@@ -1,0 +1,12 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <!-- Server rectangle -->
+  <rect x="6" y="6" width="12" height="10" fill="#339933"/>
+  <!-- Server lines -->
+  <rect x="8" y="8" width="8" height="1" fill="#1a661a"/>
+  <rect x="8" y="11" width="8" height="1" fill="#1a661a"/>
+  <rect x="8" y="14" width="8" height="1" fill="#1a661a"/>
+  <!-- Lock overlay -->
+  <rect x="16" y="14" width="4" height="5" fill="#555"/>
+  <rect x="17" y="12" width="2" height="3" fill="#555"/>
+  <rect x="18" y="10" width="1" height="2" fill="#555"/>
+</svg>
