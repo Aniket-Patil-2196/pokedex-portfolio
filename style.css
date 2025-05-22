@@ -10,14 +10,51 @@
     justify-content: center;
 }
 
+/* =======================================================button Click Effect================================================================== */
+
+.poke-button {
+  /* display: inline-block; */
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(0);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.poke-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+  filter: brightness(90%);
+}
+
+.open-svg:active{
+   filter: brightness(80%);
+   fill: #000;
+}
+
+/* ===================================================================BODY====================================================================== */
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
     font-family: 'Press Start 2P', cursive;
 }
+/* ===========================================================Header Part======================================================================= */
 
+header{
+    top: 0;
+    height: 115px;
+    width: 100vw;
+    border: 2px solid black;
+    margin-bottom: 25px;
+}
+
+/* ===========================================================POKEDEX PART======================================================================= */
 .main{
     display: flex;
     align-items: center;
