@@ -274,6 +274,8 @@ function back() {
     rightScreen.innerHTML = "";
     display.innerHTML = "";
     display.classList.remove("textproperty");
+    aboutMeSound.pause();
+    aboutMeSound.currentTime = 0;
     showMenu();
     currentScreen = "menu";
   }
@@ -388,6 +390,7 @@ function logSelectedMenuItem() {
       typeHTMLContent(information[key].description, rightScreen, speed = 30);
       showSkillsIcons(information[key]);
       showAboutMeLeftScreen();
+      playAboutme(information[key].title);
       break;
     }
   }
@@ -620,5 +623,29 @@ function showAboutMeLeftScreen() {
   document.getElementById("about-left");
   rotateDialogue(); // immediately show the first line
 }
+
+/* ====================================================Sound play===============================================================================*/
+
+  const clickSound = document.getElementById("click-sound");
+  const hoverSound = document.getElementById("hover-sound");
+  const aboutMeSound = document.getElementById("about-me");
+
+  // Add sound to all poke-buttons
+  document.querySelectorAll(".poke-button").forEach(button => {
+    button.addEventListener("click", () => {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    });
+  });
+
+  function playAboutme(key) {
+    if(key === "About Me"){
+      aboutMeSound.play();
+    }
+    
+  }
+
+  
+
 
 
