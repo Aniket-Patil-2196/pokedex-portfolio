@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <header>
+
+    </header>
     <div class="main">
         <div class="left">
             <div class="lights-box">
@@ -32,25 +35,25 @@
             </div>
             <div class="controls">
                 <div class="nav-btn">
-                    <div class="up-btn btn utility">
+                    <div class="up-btn btn utility poke-button">
                         <img src="assets/icons/up.svg" alt="up">
                     </div>
                     <div class="lef-rig-btn">
-                        <div class="lef-btn btn-l utility">
+                        <div class="lef-btn btn-l utility poke-button">
                             <img src="assets/icons/left.svg" alt="left">
                         </div>
-                        <div class="rig-btn btn-l utility">
+                        <div class="rig-btn btn-l utility poke-button">
                             <img src="assets/icons/right.svg" alt="right">
                         </div>
                     </div>
-                    <div class="down-btn btn utility">
+                    <div class="down-btn btn utility poke-button">
                         <img src="assets/icons/down.svg" alt="down">
                     </div>
                 </div>
                 <div class="controls-right">
                     <div class="ab-btn">
-                        <div class="a-btn sel-btn">A</div>
-                        <div class="b-btn sel-btn">B</div>
+                        <div class="a-btn sel-btn poke-button">A</div>
+                        <div class="b-btn sel-btn poke-button">B</div>
                     </div>
                     <div class="speaker">
                         <img id="speaker" src="assets/icons/speaker (menue).svg" alt="">
@@ -65,7 +68,7 @@
             <div class="right">
                 <div class="right-front right-panels">
                     <div class="open-btn">
-                        <img id="open-btn" src="assets/icons/open.svg" alt="open">
+                        <img class="open-svg" id="open-btn" src="assets/icons/open.svg" alt="open">
                     </div>
                     <div class="notch"></div>
                 </div>
@@ -74,13 +77,18 @@
                         <div class="display-right"></div>
                     </div>
                     <div class="buttons">
-                        <button class="btn-right" type="button">a</button>
-                        <button class="btn-right close" type="button">b</button>
+                        <button class="btn-right poke-button" type="button">a</button>
+                        <button class="btn-right close poke-button" type="button">Close</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <audio id="click-sound" src="assets/sound/SFX_PRESS_AB.wav"
+        preload="auto"></audio>
+    <audio id="hover-sound" src="https://assets.mixkit.co/sfx/download/mixkit-retro-game-notification-212.wav"
+        preload="auto"></audio>
+    <audio id="about-me" src="assets/sound/About me (3).wav" preload="auto"></audio>
 
     <script src="script.js"></script>
 </body>
